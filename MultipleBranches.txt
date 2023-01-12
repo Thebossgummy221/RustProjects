@@ -1,0 +1,1 @@
+Each Lab file is done seperately and they are constrained within their own branch, which is definitely an issue, but since I rarely upload projects to github, it should not be a major issue... I hope
