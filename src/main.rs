@@ -1,0 +1,52 @@
+use std::io;
+use io::*;
+
+fn main() {
+    print!("Course 1 hours: ");
+    stdout().flush().expect("");
+    let mut answer:String = String::new();
+    stdin().read_line(& mut answer).expect("");
+    let c1:i32 = answer.trim().parse().expect("Not an integer");
+    print!("Grade for course 1: ");
+    stdout().flush().expect("");
+    let mut answer:String = String::new();
+    stdin().read_line(& mut answer).expect("");
+    let g1:i32 = answer.trim().parse().expect("Not an integer");
+    print!("Course 2 hours: ");
+    stdout().flush().expect("");
+    let mut answer:String = String::new();
+    stdin().read_line(& mut answer).expect("");
+    let c2:i32 = answer.trim().parse().expect("Not an integer");
+    print!("Grade for course 2: ");
+    stdout().flush().expect("");
+    let mut answer:String = String::new();
+    stdin().read_line(& mut answer).expect("");
+    let g2:i32 = answer.trim().parse().expect("Not an integer");
+    print!("Course 3 hours: ");
+    stdout().flush().expect("");
+    let mut answer:String = String::new();
+    stdin().read_line(& mut answer).expect("");
+    let c3:i32 = answer.trim().parse().expect("Not an integer");
+    print!("Grade for course 3: ");
+    stdout().flush().expect("");
+    let mut answer:String = String::new();
+    stdin().read_line(& mut answer).expect("");
+    let g3:i32 = answer.trim().parse().expect("Not an integer");
+    print!("Course 4 hours: ");
+    stdout().flush().expect("");
+    let mut answer:String = String::new();
+    stdin().read_line(& mut answer).expect("");
+    let c4:i32 = answer.trim().parse().expect("Not an integer");
+    print!("Grade for course 4: ");
+    stdout().flush().expect("");
+    let mut answer:String = String::new();
+    stdin().read_line(& mut answer).expect("");
+    let g4:i32 = answer.trim().parse().expect("Not an integer");
+    let total_hours= c1+c2+c3+c4;
+    let total_quality_points = c1*g1+ c2*g2+ c3*g3 + c4*g4;
+    let gpa = total_quality_points as f32/ total_hours as f32;
+    println!("Total hours is: {}", total_hours);
+    println!("Total quality points is: {}", total_quality_points);
+    println!("Your GPA for this semester is {}", gpa);
+
+}
